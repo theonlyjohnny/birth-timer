@@ -29,9 +29,10 @@ var showContent = function(msec, date, time, theDate) {
 	// 		$(displays[displays.length - 2]).text(data[displays.length - 2] + 1)
 	// 	}, 1000)
 	// }
-	setTimeout(function(){updateNumbers(date, time, theDate)
-},6000)
-	
+	setTimeout(function() {
+		updateNumbers(date, time, theDate)
+	}, 6000)
+
 }
 
 
@@ -86,12 +87,12 @@ $(document).ready(function() {
 	$("#submit").click(function() {
 		var date = $("#bday").val()
 		var time = $("#btime").val()
-			// if (date.length != 10 || time.length != 5) {
-			// confirm("Complete all data please!")
-			// } else {
-		$("#inputContainer").css("display", "none")
-		updateNumbers(date, time, null)
-			// }
+		if (date.length != 10 || time.length != 5) {
+			confirm("Complete all data please!")
+		} else {
+			$("#inputContainer").css("display", "none")
+			updateNumbers(date, time, null)
+		}
 		return false
 	})
 	return false;
