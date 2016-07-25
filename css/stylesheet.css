@@ -1,0 +1,20 @@
+#displayContainer {
+  display: none;
+}
+
+span {
+  color: grey;
+  opacity: 0.5;
+}
+
+.btn {
+  margin: 20px 0 0 0;
+  display: inline;
+}
+
+.display {
+	display: inline-block;
+}
+input {
+	display: list-item;
+}

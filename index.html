@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' rel='stylesheet prefetch'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="inputContainer">
+      <label for="bday">What day were you born?</label>
+      <br>
+      <input type="date" name="bday" id="bday" />
+      <label for="btime">What time were you born? <span>(Optional)</span></label>
+      </br>
+      <input type="time" name="btime" id="btime" />
+      <br>
+      <input type="submit" id="submit" class="btn btn-success"></input>
+    </div>
+    <div class="container-fluid" id="displayContainer">
+      <ul id="displays">
+        <li class="display">
+          You've been alive for:
+          <div class="panel panel-default"></div> years!
+        </li>
+        <li class="display">
+          You've been alive for:
+          <div class="panel panel-default"></div>
+          months!
+        </li>
+        <li class="display">
+          You've been alive for:
+          <div class="panel panel-default"></div>
+          days!
+        </li>
+        <li class="display">You've been alive for:
+          <div class="panel panel-default"></div> hours!</li>
+        <li class="display">You've been alive for:
+          <div class="panel panel-default"></div> minutes!</li>
+        <li class="display">You've been alive for:
+          <div class="panel panel-default"></div> seconds!</li>
+        <li class="display">You've been alive for:
+          <div class="panel panel-default"></div> milliseconds!</li>
+      </ul>
+      <!-- <button class="btn-block btn-info" id="refresh">Refresh to the nearest</button> -->
+    </div>
+  </div>
+</body>
+
+</html>
